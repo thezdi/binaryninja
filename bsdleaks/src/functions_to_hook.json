@@ -1,0 +1,16 @@
+{
+	"memset":["arg0", "arg2"],
+	"bzero": ["arg0", "arg1"],
+	"bcopy": ["arg1", "arg2"],
+	"memcpy":["arg0", "arg2"],
+	"memmove":["arg0", "arg2"],
+	"strncpy":["arg0", "arg2"],
+	"strlcpy":["arg0", "arg2"],
+	"copyin":["arg1", "arg2"],
+
+	"copyout":[],
+	"free":[],
+	"kfree":[],
+	"vfree":[]
+}
+

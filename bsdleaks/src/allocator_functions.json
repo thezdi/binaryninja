@@ -1,0 +1,6 @@
+{
+	"malloc":["arg0"],
+	"kmalloc":["arg0"],
+	"vmalloc":["arg0"]
+}
+
