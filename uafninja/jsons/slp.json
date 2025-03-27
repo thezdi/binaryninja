@@ -1,0 +1,36 @@
+{
+	"allocators":[	
+		{
+			"alloc":{"func":"malloc", "arg": "arg0"},
+			"dealloc":{"func":["free", "realloc"], "arg":["arg0", "arg0"]}
+		},
+		{
+			"alloc":{"func":"realloc", "arg": "arg0"},
+			"dealloc":{"func":"free", "arg":"arg0"}
+		},
+		{
+			"alloc":{"func":"SLPBufferAlloc", "arg": "arg0"},
+			"dealloc":{"func":"SLPBufferFree", "arg":"arg0"}
+		},
+		{
+			"alloc":{"func":"SLPBufferRealloc", "arg": "arg0"},
+			"dealloc":{"func":"SLPBufferFree", "arg":"arg0"}
+		},
+		{
+			"alloc":{"func":"SLPMessageAlloc", "arg": "arg0"},
+			"dealloc":{"func":"SLPMessageFree", "arg":"arg0"}
+		},
+		{
+			"alloc":{"func":"SLPMessageRealloc", "arg": "arg0"},
+			"dealloc":{"func":"SLPMessageFree", "arg":"arg0"}
+		},
+		{
+			"alloc":{"func":"SLPDatabaseOpen", "arg": "arg0"},
+			"dealloc":{"func":"", "arg":""}
+		},
+		{
+			"alloc":{"func":"calloc", "arg": "arg0"},
+			"dealloc":{"func":"free", "arg":"arg0"}
+		}
+	]
+}

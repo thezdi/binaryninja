@@ -1,0 +1,21 @@
+{
+	"allocators":[	
+		{
+			"alloc":{"func":"malloc", "arg": "arg0"},
+			"dealloc":{"func":["free", "realloc"], "arg":["arg0", "arg0"]}
+		},
+		{
+			"alloc":{"func":"calloc", "arg": "arg1"},
+			"dealloc":{"func":["free", "realloc"], "arg":["arg0", "arg0"]}
+		},
+		{
+			"alloc":{"func":"realloc", "arg": "arg0"},
+			"dealloc":{"func":"free", "arg":"arg0"}
+		},
+		{
+			"alloc":{"func":"jas_tvparser_create", "arg": ""},
+			"dealloc":{"func":"jas_tvparser_destroy", "arg": "arg0"}
+		}
+
+	]
+}

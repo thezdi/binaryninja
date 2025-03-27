@@ -1,0 +1,24 @@
+{
+	"allocators":[	
+		{
+			"alloc":{"func":"malloc", "arg": "arg0"},
+			"dealloc":{"func":"free", "arg": "arg0"}
+		},
+		{
+			"alloc":{"func":"malloc", "arg": "arg0"},
+			"dealloc":{"func":"realloc", "arg": "arg0"}
+		},
+		{
+			"alloc":{"func":"calloc", "arg": "arg1"},
+			"dealloc":{"func": "free", "arg": "arg0"}
+		},
+		{
+			"alloc":{"func":"calloc", "arg": "arg1"},
+			"dealloc":{"func":"realloc", "arg": "arg0"}
+		},
+		{
+			"alloc":{"func":"realloc", "arg": "arg0"},
+			"dealloc":{"func":"free", "arg":"arg0"}
+		}
+	]
+}

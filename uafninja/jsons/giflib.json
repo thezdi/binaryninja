@@ -1,0 +1,8 @@
+{
+	"allocators":[	
+		{
+			"alloc":{"func":"EGifOpenFileHandle", "arg": "arg0"},
+			"dealloc":{"func":["EGifCloseFile"], "arg":"arg0"}
+		}
+	]
+}
